@@ -3,4 +3,9 @@
     <string name="saludo">Bienvenido a la Aplicación del Clima</string>
     <string name="btn1">Pronóstico Actual</string>
     <string name="btn2">Listado de Ciudades</string>
+    <string name="tempActual">30°</string>
+    <string name="desc">Soleado, ideal Estadio El Teniente</string>
+    <string name="min">18°</string>
+    <string name="max">32°</string>
+
 </resources>
