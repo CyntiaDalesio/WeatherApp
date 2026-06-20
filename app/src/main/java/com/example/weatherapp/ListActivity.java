@@ -11,12 +11,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
-
 public class ListActivity extends AppCompatActivity {
-
     private ListView listView;
     private ArrayList<String> ciudades;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,11 +28,10 @@ public class ListActivity extends AppCompatActivity {
         ciudades.add("La Paz");
         ciudades.add("Maipu");
         ciudades.add("Las Heras");
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>
+       /* ArrayAdapter<String> adapter = new ArrayAdapter<String>
                 (getApplicationContext(), android.R.layout.simple_expandable_list_item_1,ciudades);
+        listView.setAdapter(adapter);*/
+        MyAdapter adapter = new MyAdapter(this,ciudades);
         listView.setAdapter(adapter);
-
     }
-
 }
